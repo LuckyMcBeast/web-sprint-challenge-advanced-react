@@ -30,15 +30,26 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
-To build a stateful class component, you first need to extend the class with React.Component. Then you need to build a constructor containing `super` that defines the state using 
+To build a stateful class component, you first need to extend the class with `React.Component`. Then you need to build a constructor containing `super` that defines the state using 
 ```
 this.state ={
   //state : value
 }
 ```
-The constructor can take props. To update the state you 
+The constructor can take props. To update the state you need to create change handler that uses setState to modify the state. You can append state in a similar way by adding `...this.state,` prior to your new state object as shown below:
+
+```
+handleChange = (e) => {
+        this.setState({
+            ...this.state,
+            newState: e.target.value
+        })
+    }
+```
 
 2. Describe the different phases of the component lifecycle.
+
+
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
