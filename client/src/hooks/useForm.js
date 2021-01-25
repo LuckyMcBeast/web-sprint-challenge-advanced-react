@@ -34,4 +34,4 @@ const useForm = (initialValue) => {
       return [values, showSuccessMessage, handleChanges, handleSubmit]
 }
 
-export default useForm()
+export default useForm
