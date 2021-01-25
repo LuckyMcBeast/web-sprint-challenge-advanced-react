@@ -49,7 +49,13 @@ handleChange = (e) => {
 
 2. Describe the different phases of the component lifecycle.
 
+There are three phases in the React component lifecycle.
 
+Mounting - Builds component and renders content.`componentDidMount` is performed right after.
+
+Updating - Data is update based on changes to state and user engagement. `shouldComponentUpdate` determines whether the component should re-render and runs in this phase.
+
+Unmounting - Removes components from the screen. `componentWillUnmount` is called to kill the component and clean up.
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
