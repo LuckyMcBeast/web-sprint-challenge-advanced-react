@@ -15,7 +15,7 @@ const initialValue = {
 // and replace the necessary stateful logic from CheckoutForm with the hook
 
 const CheckoutForm = (props) => {
-  
+
   const [values, showSuccessMessage, handleChanges, handleSubmit] = useForm(initialValue);
 
   return (
@@ -69,11 +69,11 @@ const CheckoutForm = (props) => {
           <p>Your new green friends will be shipped to:</p>
           <br />
           <br />
-          <p>
+          <p data-testid="nameSuccess">
             {values.firstName} {values.lastName}
           </p>
-          <p>{values.address}</p>
-          <p>
+          <p data-testid="addressSuccess">{values.address}</p>
+          <p data-testid="cityStateSuccess">
             {values.city}, {values.state} {values.zip}
           </p>
         </div>
