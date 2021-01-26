@@ -59,9 +59,20 @@ Unmounting - Removes components from the screen. `componentWillUnmount` is calle
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+See question 2.
+
 4. Define stateful logic.
 
+Stateful logic is logic constructed within a component that handles events, sets states, or makes another change to the component's state.
+
 5. Describe how to test a React component with React Testing Library.
+
+You can test a React component using the react testing library by importing the library and the component into it's own testing file (`test.js`). For convention, it should be the same name as the file being tested. To create a test, call the test function:
+
+```
+test("Test Title, Be descriptive", () => { //Test Here});
+```
+After this you need to render the component within the test area. After you can perform `fireEvent`s, like button click and changing input text, and use `expect` to assert that what should be rendered is rendered. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
